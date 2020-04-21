@@ -1,5 +1,6 @@
 package cn.edu.sdwu.android02.classroom.sn170507180207.myapplication;
 
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,6 +14,17 @@ public class Ch10Activity1 extends AppCompatActivity {
         Log.i(Ch10Activity1.class.toString(),"onCreate");
         setContentView(R.layout.layout_ch10_1);
     }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
+        super.onSaveInstanceState(outState, outPersistentState);
+    }
+
     public void finishClick(View view){
         finish();//关闭界面
     }

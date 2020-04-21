@@ -3,6 +3,7 @@ package cn.edu.sdwu.android02.classroom.sn170507180207.myapplication;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 public class Ch10Activity1 extends AppCompatActivity {
 
@@ -10,6 +11,10 @@ public class Ch10Activity1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.i(Ch10Activity1.class.toString(),"onCreate");
+        setContentView(R.layout.layout_ch10_1);
+    }
+    public void finishClick(View view){
+        finish();//关闭界面
     }
 
     @Override

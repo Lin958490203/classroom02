@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
     <EditText
         android:layout_width="match_parent"
         android:id="@+id/ch10_2_et"
@@ -29,6 +30,42 @@
         android:layout_width="wrap_content"
         android:text="web"
         android:onClick="web"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="contactsList"
+        android:onClick="contactsList"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="contactsDetail"
+        android:onClick="contactsDetail"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="showMap"
+        android:onClick="showMap"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="showPhoto"
+        android:onClick="showPhoto"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="PICK_CONTACT"
+        android:onClick="pickContact"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="implictStart"
+        android:onClick="implictStart"
         android:layout_height="wrap_content" />
 
 </LinearLayout>

@@ -41,9 +41,7 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".Ch12Activity1">
-
-        </activity>
+        <activity android:name=".Ch12Activity1"></activity>
 
         <service
             android:name=".MyService2"
@@ -55,6 +53,9 @@
             android:exported="true" />
 
         <activity android:name=".Ch12Activity2">
+
+        </activity>
+        <activity android:name=".Ch13Activity1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
